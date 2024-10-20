@@ -1,0 +1,49 @@
+header {
+    background-color: #111;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position:fixed;
+    top: 0;
+    width: 50%;
+    z-index: 10;
+    border-radius: 20px;
+    border: #c3c6ce, 2px, solid;
+    margin: auto;
+    margin-left: 25%;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Estilos para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    header {
+        width: 90%;
+        z-index: 10;
+        margin: auto;
+        margin-left: 5%;
+        overflow: scroll;
+    }
+}
+
+/* Estilos para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    header {
+        overflow: scroll;
+        width: 90%;
+        z-index: 10;
+        margin: auto;
+        margin-left: 5%;
+    }
+}

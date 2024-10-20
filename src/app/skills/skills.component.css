@@ -1,0 +1,81 @@
+/* Habilidades */
+.skills-container {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 55%;
+    border-radius: 20px;
+    border: #ffff, 2px, solid;
+}
+
+.skill {
+    background-color: #0000;
+    padding: 15px;
+    color: #ffff;
+    border-radius: 20px;
+    border: #ffff,2px,solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.skill img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #ff0000;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    animation: progress-bar 2s ease forwards;
+}
+
+@keyframes progress-bar {
+    to {
+        width: 100%;
+    }
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+
+/* Estilos para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    .skills-container {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 90%;
+       
+    }
+}
+
+/* Estilos para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+
+    .skills-container {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 90%;
+       
+    }
+    
+}

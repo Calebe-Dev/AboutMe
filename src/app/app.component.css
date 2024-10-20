@@ -1,0 +1,89 @@
+/* Reset básico e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body {
+    font-family: 'San Francisco', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Botão padrão */
+.btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d90000;
+}
+
+.container-Global{
+    margin: auto;
+    overflow: hidden;
+}
+
+.container{
+    margin: auto;
+    margin-top: 6%;
+}
+
+.nav-container{
+    margin: auto;
+    align-items: center;
+
+}
+
+/* Estilos para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    .hero{
+        display:none;
+    }
+    .container{
+        margin: auto;
+        margin-top: 10%;
+    }
+}
+
+/* Estilos para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    .hero{
+        display: none;
+    }
+    .container{
+        margin: auto;
+        margin-top: 20%;
+    }
+}

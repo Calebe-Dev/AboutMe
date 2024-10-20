@@ -1,0 +1,15 @@
+/* Estilos para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    .container-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Estilos para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    .container-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
